@@ -1,0 +1,1443 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:wght@300;400;700&display=swap");
+/* font 끝 */
+
+/* 노말라이즈 */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*    width: 100%;
+  height: 100%; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.body {
+  width: 100%;
+  height: 100%;
+}
+
+/* 공통 작업*/
+section {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer-box {
+  height: 260px;
+  background-color: #414141;
+  display: flex;
+}
+.footer-logo {
+  min-width: 100px;
+  min-height: 98px;
+  background-image: url("/img/logo/0715_퀀텀-CI-logo\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: 160px;
+}
+.footer-txt {
+  /* background-color: #fff; */
+  height: 160px;
+  min-width: 700px;
+  margin: 35px 120px;
+}
+
+.footer-box span {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.footer-box span:nth-child(1) {
+  font-size: 22px;
+  color: #ffffff;
+  opacity: 60%;
+  font-weight: 500;
+}
+.footer-box span:nth-child(1) ~ span {
+  font-size: 16px;
+  color: #a6a6a6;
+
+  font-weight: 200;
+}
+
+.footer-txt img {
+  margin: 4px;
+}
+
+/*공통 메뉴 */
+
+.menu-con {
+  height: 400px;
+  /* background-color: #fff; */
+
+  display: flex;
+}
+.logo-box {
+  min-width: 260px;
+  height: 140px;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+
+  background-image: url("/img/logo/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-con-con {
+  margin-right: 46px;
+  margin-left: auto;
+  margin-top: 32px;
+}
+.menu-con-con a {
+  display: block;
+  text-align: center;
+  color: aliceblue;
+}
+
+.menu-con-con > ul > li > a {
+  font-size: 24px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 20px 30px;
+}
+.menu-con-con > ul > li > ul > li > a {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 16px 20px;
+}
+.menu-con-con > ul > li {
+  position: relative;
+
+  width: 180px;
+}
+.menu-con-con > ul > li > ul {
+  position: absolute;
+  top: 100;
+  width: 100%;
+  display: none;
+}
+.menu-con-con ul > li:hover > a {
+  color: #083181;
+  font-weight: bold;
+}
+
+.menu-con-con > ul > li:hover > ul {
+  display: block;
+}
+
+.menu-con-con > ul {
+  display: flex;
+}
+
+.menu-con-con > ul > li > ul > li:nth-child(1) > a {
+  padding-top: 38px;
+}
+/* 공통 모바일 메뉴 */
+div.mobile-menu-con-con {
+  display: none;
+}
+
+/* 공통 끝*/
+
+/* main */
+.main-con {
+  height: 100vh;
+
+  position: relative;
+}
+
+/* 슬라이드작업 */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  margin-right: 0px !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  left: 60px !important;
+  color: #fff !important;
+  opacity: 85%;
+}
+.swiper-button-next {
+  right: 60px !important;
+  color: #fff !important;
+  opacity: 85%;
+}
+.swiper-pagination-bullet {
+  border-radius: 10% !important;
+  width: 12px !important;
+  height: 12px !important;
+  margin: 12px !important;
+  background-color: #fff !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 240px !important;
+}
+
+/* 슬라이드끝 */
+
+.main-menu-con {
+  position: absolute;
+  width: 100%;
+  z-index: 500;
+}
+
+.main-con-txt-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  z-index: 300;
+  text-align: center;
+  margin-top: 40px;
+}
+.main-con-txt-box span {
+  color: aliceblue;
+  line-height: 20px;
+}
+.main-con-txt-box > span:nth-child(1) {
+  font-size: 86px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.main-con-txt-box > span:nth-child(3) {
+  padding-top: 36px;
+  font-size: 22px;
+  display: block;
+  font-weight: 500;
+}
+.main-con-txt-box > span:nth-child(5) {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.scroll-box {
+  z-index: 400;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-box span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.scroll-box div {
+  margin-top: 20px;
+  border-left: solid #ffffff 3px;
+
+  height: 90px;
+}
+
+/* main 끝*/
+
+/* company */
+.company-con {
+  position: relative;
+}
+.company-bg {
+  min-width: 100%;
+  min-height: 480px;
+  background-image: url("/img/company/Group\ 293.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.intro-txt {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  transform: translate(-50%, -50%);
+}
+.intro-txt span:nth-child(1) {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  opacity: 80%;
+}
+.intro-txt span:nth-child(3) {
+  margin-top: -10px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+.intro-nav {
+  position: absolute;
+  top: 480px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 80px;
+
+  background-color: #fff;
+}
+.intro-nav > ul {
+  display: flex;
+  height: 100%;
+}
+.intro-nav > ul > li {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  border: solid rgb(224, 224, 224) 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.intro-nav > ul > li:nth-child(1) ~ li {
+  margin-left: -0.5px;
+}
+.intro-nav > ul > li > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.intro-nav > ul > li:hover {
+  background-color: #335497;
+}
+.intro-nav > ul > li:hover > a {
+  color: white;
+}
+
+.company-greeting-con {
+  height: 1450px;
+}
+.con-title {
+  width: 200px;
+
+  margin: auto;
+  margin-top: 180px;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.con-title span:nth-child(1) {
+  font-size: 46px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+.con-title span:nth-child(3) {
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #d6d5d5;
+}
+
+.company-greeting-txt-box {
+  margin-top: 100px;
+  background-color: #ececec;
+  height: 900px;
+  padding: 80px 0;
+}
+.company-greeting-logo {
+  width: 200px;
+  height: 200px;
+
+  margin: auto;
+  background-image: url("/img/company/0715_퀀텀-CI-\(logo-2\)\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.straight {
+  left: 50%;
+  top: 61%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 20px;
+
+  position: absolute;
+  border-bottom: solid #083181 0.3px;
+}
+.company-greeting-txt {
+  width: 1100px;
+  margin: auto;
+  margin-top: 30px;
+}
+.company-greeting-txt span:nth-child(1) {
+  font-size: 52px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000000;
+}
+.highlight {
+  margin-left: 26px;
+  font-size: 52px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #525172;
+  box-shadow: inset 0 -12px 0 #e2ccff;
+}
+.company-greeting-txt span:nth-child(2) ~ span {
+  font-size: 26px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  line-height: 46px;
+}
+div.company-greeting-txt span:nth-last-child(2) {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.greeting-txt-margin {
+  width: 90px;
+  height: 90px;
+}
+
+.company-organization-title {
+  width: 300px;
+
+  margin: auto;
+  margin-top: 180px;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-organization-title span:nth-child(1) {
+  font-size: 46px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+.company-organization-title span:nth-child(3) {
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #d6d5d5;
+}
+.company-organization-img {
+  width: 1700px;
+  height: 1200px;
+  background-image: url("/img/company/organi.png");
+  margin: 40px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.company-management-con {
+  height: 1550px;
+}
+.company-management-title {
+  width: 300px;
+
+  margin: auto;
+  margin-top: 180px;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-management-title span:nth-child(1) {
+  font-size: 46px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+.company-management-title span:nth-child(3) {
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #d6d5d5;
+}
+.company-management-txt {
+  width: 760px;
+  height: 180px;
+  /*   border: solid gray 0.5px; */
+
+  margin: auto;
+  margin-top: 80px;
+}
+.company-management-txt span {
+  font-size: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+.company-management-txt span:nth-child(4) {
+  font-weight: bold;
+  color: #083181;
+}
+
+.company-management-img1 {
+  width: 1200px;
+  height: 500px;
+  background-image: url("/img/company/Group\ 306.png");
+  margin: 10px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.company-management-img2-box {
+  width: 100%;
+  height: 660px;
+  overflow: hidden;
+}
+
+.company-management-img2 {
+  width: 2000px;
+  height: 100%;
+  overflow: hidden;
+  height: 700px;
+  background-image: url("/img/company/Group\ 307.png");
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-top: 80px;
+}
+.company-directions-con {
+  height: 940px;
+}
+
+.company-directions-title {
+  width: 300px;
+
+  margin: auto;
+  margin-top: 180px;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-directions-title span:nth-child(1) {
+  font-size: 46px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+.company-directions-title span:nth-child(3) {
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #d6d5d5;
+}
+
+.company-directions-kakao-map {
+  width: 740px;
+  margin: auto;
+  margin-top: 80px;
+}
+.company-directions-kakao-map > div:nth-child(1) {
+  height: 500px;
+  /* background-color: #a6a6a6; */
+}
+.company-map-box {
+  width: 740px;
+  height: 500px;
+}
+
+.company-map-box > div {
+  width: 100%;
+  height: 100%;
+}
+.company-directions-kakao-map > div:nth-child(2) {
+  height: 120px;
+  background-color: #3c4e73;
+}
+.company-directions-map-txt {
+  padding: 28px 36px;
+  color: white;
+}
+.company-directions-map-txt span:nth-child(1) {
+  font-size: 26px;
+}
+.company-directions-map-txt span:nth-child(1) ~ span {
+  font-size: 18px;
+}
+/* company 끝*/
+
+/* business */
+.business-con {
+  position: relative;
+}
+.business-bg {
+  min-width: 100%;
+  min-height: 480px;
+  background-image: url("/img/business/Group\ 294.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.business-in-con {
+  height: 1800px;
+}
+.business-con-img-box {
+  width: 1400px;
+  height: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.business-con-img-box div {
+  width: 600px;
+  height: 460px;
+  object-fit: cover;
+  margin: 30px;
+  border: solid white 2px;
+  /* background-image: url("/img/business/Group\ 294.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.business-in-con .business-con-img-box div:nth-child(1) {
+  background-image: url("/img/business/Group\ 297.png");
+}
+.business-in-con .business-con-img-box div:nth-child(2) {
+  background-image: url("/img/business/Group\ 298.png");
+}
+.business-in-con .business-con-img-box div:nth-child(3) {
+  background-image: url("/img/business/Group\ 299.png");
+}
+.business-in-con .business-con-img-box div:nth-child(4) {
+  background-image: url("/img/business/Group\ 305.png");
+}
+
+/* out */
+
+.business-out-con {
+  height: 1800px;
+}
+
+.business-con-img-box div {
+  width: 600px;
+  height: 460px;
+  object-fit: cover;
+  margin: 30px;
+  border: solid white 2px;
+  /* background-image: url("/img/business/Group\ 294.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.business-out-con .business-con-img-box div:nth-child(1) {
+  background-image: url("/img/business/Group\ 301.png");
+}
+.business-out-con .business-con-img-box div:nth-child(2) {
+  background-image: url("/img/business/Group\ 302.png");
+}
+.business-out-con .business-con-img-box div:nth-child(3) {
+  background-image: url("/img/business/Group\ 303.png");
+}
+.business-out-con .business-con-img-box div:nth-child(4) {
+  background-image: url("/img/business/Group\ 304.png");
+}
+
+.business-process {
+  width: 1400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 160px;
+}
+.business-process span {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.business-process-img {
+  margin: auto;
+
+  width: 1400px;
+  height: 350px;
+  background-image: url("/img/business/process.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.business-in-con .con-title {
+  width: 300px;
+}
+.business-out-con .con-title {
+  width: 300px;
+}
+/* Business 끝*/
+
+/* pr*/
+.pr-con {
+  position: relative;
+}
+.pr-bg {
+  min-width: 100%;
+  min-height: 480px;
+  background-image: url("/img/pr/Group\ 292.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.pr-ci-inro-box {
+  width: 1300px;
+  height: 1200px;
+  margin: auto;
+  margin-top: 120px;
+}
+.pr-ci-inro-box span {
+  font-size: 34px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.logo-intro-img {
+  background-image: url("/img/pr/logo.png");
+  width: 1000px;
+  height: 1000px;
+
+  margin: auto;
+  margin-top: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* pr 끝*/
+
+/* recruit*/
+.recuit-con {
+  position: relative;
+}
+.recuit-bg {
+  min-width: 100%;
+  min-height: 480px;
+  background-image: url("/img/recruit/Group\ 295.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.recruit-txt {
+  height: 160px;
+  /* background-color: #083181; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.recruit-txt span {
+  font-size: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.recruit-txt span:nth-child(3) {
+  color: #3c4e73;
+}
+.recruit-img {
+  width: 1200px;
+  height: 400px;
+  background-image: url("/img/recruit/01.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 80px auto;
+}
+.recruit-process {
+  width: 1600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 140px;
+}
+.recruit-process span {
+  margin-left: 242px;
+  font-size: 32px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+.recruit-process-img {
+  width: 1600px;
+  height: 200px;
+  margin: 40px auto;
+  background-image: url("/img/recruit/02.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+.recruit-con .con-title {
+  width: 500px;
+}
+.recruit-empoly-txt {
+  width: 1150px;
+  height: 1150px;
+  font-family: "Noto Sans KR", sans-serif;
+  /* background-color: #d6d5d5; */
+  margin: 80px auto;
+}
+.recruit-empoly-txt > span:nth-child(1) {
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 60px;
+}
+.recruit-empoly-txt div {
+  margin-top: 70px;
+}
+.recruit-empoly-txt div > span:nth-child(1) {
+  margin-left: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.recruit-empoly-txt div ul {
+  margin-left: 45px;
+  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.recruit-empoly-txt div ul li {
+  margin-top: 18px;
+}
+.recruit-empoly-txt div ul li a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #200f50;
+}
+.submit > ul > li:nth-child(2) {
+  margin-bottom: 50px;
+}
+.submit > ul > li:nth-child(5) {
+  margin-bottom: 70px;
+}
+.submit > ul > li:nth-child(4) span {
+  color: #200f50;
+  font-weight: bold;
+}
+.submit > ul > li:last-child {
+  display: block;
+  padding: 25px 160px;
+  width: 380px;
+  border: solid #200f50 3px;
+  border-radius: 20px;
+  font-size: 22px;
+}
+/* recruit 끝*/
+
+/*  노트북 media */
+/* 화면 너비 0 ~ 1200px */
+/* @media (min-width: 821px) and (max-width: 1220px){
+ 
+} */
+/*  노트북 media 끝*/
+
+/*  태블릿 media  */
+/* 화면 너비 0 ~ 768px */
+@media (min-width: 481px) and (max-width: 820px) {
+  /* 모바일 수평 스크롤 금지 */
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  div.swiper-button-next {
+    display: none;
+  }
+  div.swiper-button-prev {
+    display: none;
+  }
+
+  /* 공통 모바일 메뉴 커스텀 */
+
+  div.menu-con-con {
+    display: none;
+  }
+  div.logo-box {
+    margin-left: 40px;
+  }
+  div.mobile-menu-con-con {
+    width: 240px;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    right: -240px;
+    position: fixed;
+    transition: all 0.3s ease-in-out 0.1s;
+  }
+
+  span.menu-icon {
+    display: block;
+    background-image: url("/img/main/mobile.png");
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: 26px;
+    position: fixed;
+    top: 12px;
+    right: 20px;
+
+    filter: brightness(0) invert(1);
+  }
+
+  .mobile-menu-con-con ul > li > a {
+    display: block;
+    font-weight: bold;
+    padding: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  .mobile-menu-con-con > ul > li > a {
+    color: #083181;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .mobile-menu-con-con > ul > li > ul {
+    display: none;
+  }
+
+  .mobile-menu-con-con > ul {
+    margin-top: 150px;
+  }
+
+  .menu-btn-click {
+    display: block;
+  }
+
+  .footer-txt {
+    margin: 30px 60px;
+  }
+
+  /* 컴퍼니 */
+  .intro-nav {
+    width: 600px;
+  }
+  .intro-nav > ul > li > a {
+    padding: 0;
+    font-size: 18px;
+  }
+  .company-greeting-txt {
+    width: 670px;
+  }
+  .highlight {
+    width: 380px;
+    display: block;
+    margin: 20px auto;
+  }
+  .straight {
+    top: 1350px;
+  }
+
+  .company-greeting-txt-box {
+    height: 1200px;
+  }
+  .company-greeting-con {
+    height: 1700px;
+  }
+
+  .company-organization-img {
+    width: 700px;
+    height: 700px;
+    background-size: 100%;
+  }
+
+  .company-management-img1 {
+    width: 800px;
+    height: 500px;
+    background-image: url("/img/company/Group\ 306.png");
+    margin: 10px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(0.7, 0.7);
+  }
+
+  .company-management-img2 {
+    width: 100%;
+    height: 61=20px;
+    background-image: url("/img/company/Group\ 307.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160% 60%;
+
+    margin-top: -120px;
+  }
+  .company-management-con {
+    height: 1300px;
+  }
+
+  .company-map-box {
+    width: 740px;
+    height: 500px;
+  }
+
+  /* 비즈니스 */
+
+  .business-in-con {
+    height: 3000px;
+  }
+
+  div.business-con-img-box {
+    height: 2300px;
+  }
+
+  div.business-con-img-box {
+    width: 700px;
+  }
+
+  .business-process {
+    width: 700px;
+  }
+  .business-process-img {
+    margin: auto;
+    margin-top: 40px;
+    height: 200px;
+    width: 680px;
+    background-size: 90%;
+  }
+
+  .business-out-con {
+    height: 3000px;
+  }
+
+  /* pr */
+
+  .pr-ci-inro-box {
+    width: 700px;
+    height: 900px;
+  }
+  .pr-ci-inro-box span {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  .logo-intro-img {
+    background-size: 98%;
+    width: 700px;
+    height: 700px;
+  }
+  /* recuit */
+  .recruit-img {
+    width: 800px;
+    background-size: 80%;
+  }
+  .recruit-process {
+    width: 800px;
+  }
+  .recruit-process span {
+    margin-left: 62px;
+  }
+  .recruit-process-img {
+    width: 800px;
+    background-size: 85%;
+  }
+
+  .recruit-empoly-txt {
+    width: 700px;
+  }
+  .submit > ul > li:last-child {
+    width: 360px;
+    padding: 24px 100px;
+  }
+}
+/*  태블릿 media  끝*/
+
+/*  폰 media */
+/* 화면 너비 0 ~ 480px */
+@media (min-width: 100px) and (max-width: 480px) {
+  /* 모바일 수평 스크롤 금지 */
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* 공통 모바일 메뉴 커스텀 */
+
+  div.menu-con-con {
+    display: none;
+  }
+  div.logo-box {
+    margin-left: 40px;
+  }
+  div.mobile-menu-con-con {
+    width: 240px;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    right: -240px;
+    position: fixed;
+    transition: all 0.3s ease-in-out 0.1s;
+  }
+
+  span.menu-icon {
+    display: block;
+    background-image: url("/img/main/mobile.png");
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 26px;
+    position: fixed;
+    top: 12px;
+    right: 20px;
+    transform: scale(0.7, 0.7);
+    filter: brightness(0) invert(1);
+  }
+
+  .mobile-menu-con-con ul > li > a {
+    display: block;
+    font-weight: bold;
+    padding: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  .mobile-menu-con-con > ul > li > a {
+    color: #083181;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .mobile-menu-con-con > ul > li > ul {
+    display: none;
+  }
+
+  .mobile-menu-con-con > ul {
+    margin-top: 150px;
+  }
+
+  .menu-btn-click {
+    display: block;
+  }
+
+  div.logo-box {
+    transform: scale(0.7, 0.7);
+
+    margin-left: 0;
+  }
+
+  .main-con-txt-box > span:nth-child(1) {
+    font-size: 46px;
+  }
+  .main-con-txt-box > span:nth-child(3) {
+    font-size: 16px;
+  }
+  .main-con-txt-box > span:nth-child(5) {
+    font-size: 16px;
+  }
+
+  .footer-txt {
+    margin: 0px 20px;
+  }
+
+  div.swiper-button-next {
+    display: none;
+  }
+  div.swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .footer-box span:nth-child(1) {
+    font-size: 18px;
+  }
+  .footer-box span:nth-child(1) ~ span {
+    font-size: 14px;
+  }
+  .footer-box {
+    align-items: center;
+  }
+
+  /* 컴퍼니 */
+  .intro-nav {
+    width: 300px;
+    height: 60px;
+  }
+  .intro-nav > ul > li > a {
+    padding: 0;
+    font-size: 12px;
+  }
+  .company-greeting-txt {
+    width: 350px;
+  }
+
+  .company-greeting-txt span:nth-child(1) {
+    font-size: 22px;
+    display: block;
+    width: 300px;
+
+    margin: auto;
+  }
+  .highlight {
+    width: 380px;
+    display: block;
+    margin: 20px auto;
+    width: 185px;
+    font-size: 26px;
+  }
+  .straight {
+    top: 1350px;
+  }
+  .greeting-txt-margin {
+    width: 20px;
+    height: 20px;
+  }
+  .company-greeting-txt span:nth-child(2) ~ span {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .company-greeting-txt-box {
+    height: 850px;
+  }
+  .company-greeting-con {
+    height: 1300px;
+  }
+  .straight {
+    top: 1260px;
+    width: 100px;
+  }
+  .company-greeting-txt-box {
+    height: 900px;
+  }
+  .company-greeting-con {
+    height: 1350px;
+  }
+
+  .company-organization-img {
+    width: 350px;
+    height: 300px;
+    background-size: 100%;
+  }
+  .company-management-txt {
+    width: 340px;
+  }
+  .company-management-txt span {
+    font-size: 14px;
+  }
+  .company-management-txt {
+    height: 100px;
+  }
+  .company-management-img1 {
+    width: 300px;
+    height: 190px;
+    background-image: url("/img/company/Group\ 306.png");
+    margin: 10px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+  }
+
+  .company-management-img2 {
+    width: 100%;
+    height: 61=20px;
+    background-image: url("/img/company/Group\ 307.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180% 60%;
+
+    margin-top: -120px;
+  }
+  .company-management-con {
+    height: 950px;
+  }
+
+  .company-directions-con {
+    height: 660px;
+  }
+  .company-directions-kakao-map {
+    width: 340px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .company-directions-kakao-map > div:nth-child(1) {
+    height: 300px;
+    background-color: #a6a6a6;
+  }
+  .company-directions-kakao-map > div:nth-child(2) {
+    height: 120px;
+    background-color: #3c4e73;
+  }
+  .company-directions-map-txt {
+    padding: 18px 44px;
+    color: white;
+  }
+  .company-directions-map-txt span:nth-child(1) {
+    font-size: 20px;
+  }
+  .company-directions-map-txt span:nth-child(1) ~ span {
+    font-size: 14px;
+  }
+
+  .company-map-box {
+    width: 340px;
+    height: 500px;
+  }
+
+  /* 비즈니스 */
+
+  .business-in-con {
+    height: 1650px;
+  }
+  .business-out-con {
+    height: 1650px;
+  }
+
+  div.business-con-img-box {
+    height: 1000px;
+    margin-top: 80px;
+  }
+  .business-con-img-box div {
+    height: 200px;
+  }
+  div.business-con-img-box {
+    width: 390px;
+  }
+  .business-process span {
+    font-size: 24px;
+    margin: 18px;
+  }
+  div.business-process-img {
+    height: 100px;
+  }
+
+  .business-process {
+    width: 350px;
+  }
+  .business-process-img {
+    margin: auto;
+    margin-top: 40px;
+    height: 200px;
+    width: 350px;
+    background-size: 90%;
+  }
+
+  .business-con-img-box div {
+    background-size: 90%;
+  }
+  /* pr */
+
+  .pr-ci-inro-box {
+    width: 300px;
+    height: 400px;
+    margin: 60px auto;
+  }
+  .pr-ci-inro-box span {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .logo-intro-img {
+    background-size: 120%;
+    width: 300px;
+    height: 360px;
+    margin: 0px;
+  }
+  /* recuit */
+  .recruit-img {
+    width: 300px;
+    height: 100px;
+    margin: 10px auto;
+    background-size: 100%;
+  }
+  .recruit-txt span:nth-child(1) {
+    font-size: 18px;
+  }
+  .recruit-txt span:nth-child(3) {
+    font-size: 18px;
+  }
+
+  .recruit-process {
+    width: 300px;
+    height: 250px;
+  }
+  .recruit-process span {
+    margin-left: 0px;
+    font-size: 22px;
+  }
+
+  .recruit-process-img {
+    width: 300px;
+    height: 100px;
+    background-size: 100%;
+  }
+  .recruit-con .con-title {
+    width: 340px;
+  }
+
+  .recruit-empoly-txt {
+    width: 300px;
+    height: 1450px;
+  }
+  .submit > ul > li:last-child {
+    width: 180px;
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+  .recruit-empoly-txt div ul {
+    margin-left: 20px;
+  }
+
+  /*  폰 media  끝*/
+}
