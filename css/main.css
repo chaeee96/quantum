@@ -1,7 +1,7 @@
 /* font */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+@import url("https://fonts.googleapis.comcss2?family=Noto+Sans+KR:wght@100&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.comcss2?family=Noto+Sans+KR&family=Roboto:wght@300;400;700&display=swap");
 /* font 끝 */
 
 /* 노말라이즈 */
@@ -292,7 +292,7 @@ div.mobile-menu-con-con {
 .company-bg {
   min-width: 100%;
   min-height: 480px;
-  background-image: url("/img/company/Group\ 293.png");
+  background-image: url("/img/company/Group293.png");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -307,7 +307,6 @@ div.mobile-menu-con-con {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   transform: translate(-50%, -50%);
 }
 .intro-txt span:nth-child(1) {
@@ -407,7 +406,7 @@ div.mobile-menu-con-con {
   height: 200px;
 
   margin: auto;
-  background-image: url("/img/company/0715_퀀텀-CI-\(logo-2\)\ 1.png");
+  background-image: url("/img/company/logo.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -422,7 +421,7 @@ div.mobile-menu-con-con {
   border-bottom: solid #083181 0.3px;
 }
 .company-greeting-txt {
-  width: 1100px;
+  width: 1200px;
   margin: auto;
   margin-top: 30px;
 }
@@ -530,7 +529,7 @@ div.company-greeting-txt span:nth-last-child(2) {
 .company-management-img1 {
   width: 1200px;
   height: 500px;
-  background-image: url("/img/company/Group\ 306.png");
+  background-image: url("/img/company/Group306.png");
   margin: 10px auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -546,7 +545,7 @@ div.company-greeting-txt span:nth-last-child(2) {
   height: 100%;
   overflow: hidden;
   height: 700px;
-  background-image: url("/img/company/Group\ 307.png");
+  background-image: url("/img/company/Group307.png");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -977,12 +976,12 @@ div.company-greeting-txt span:nth-last-child(2) {
     width: 670px;
   }
   .highlight {
-    width: 380px;
+    width: 410px;
     display: block;
     margin: 20px auto;
   }
   .straight {
-    top: 1350px;
+    top: 1400px;
   }
 
   .company-greeting-txt-box {
@@ -1001,7 +1000,7 @@ div.company-greeting-txt span:nth-last-child(2) {
   .company-management-img1 {
     width: 800px;
     height: 500px;
-    background-image: url("/img/company/Group\ 306.png");
+    background-image: url("/img/company/Group306.png");
     margin: 10px auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -1010,8 +1009,8 @@ div.company-greeting-txt span:nth-last-child(2) {
 
   .company-management-img2 {
     width: 100%;
-    height: 61=20px;
-    background-image: url("/img/company/Group\ 307.png");
+    height: 800px;
+    background-image: url("/img/company/Group307.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 160% 60%;
@@ -1225,20 +1224,17 @@ div.company-greeting-txt span:nth-last-child(2) {
   .company-greeting-txt span:nth-child(1) {
     font-size: 22px;
     display: block;
-    width: 300px;
+    width: 290px;
 
     margin: auto;
   }
   .highlight {
-    width: 380px;
     display: block;
     margin: 20px auto;
-    width: 185px;
+    width: 210px;
     font-size: 26px;
   }
-  .straight {
-    top: 1350px;
-  }
+
   .greeting-txt-margin {
     width: 20px;
     height: 20px;
@@ -1254,7 +1250,7 @@ div.company-greeting-txt span:nth-last-child(2) {
     height: 1300px;
   }
   .straight {
-    top: 1260px;
+    top: 1290px;
     width: 100px;
   }
   .company-greeting-txt-box {
@@ -1265,9 +1261,11 @@ div.company-greeting-txt span:nth-last-child(2) {
   }
 
   .company-organization-img {
+    margin-left: 6%;
     width: 350px;
-    height: 300px;
-    background-size: 100%;
+    height: 1600px;
+    background-size: 80%;
+    background-image: url("/img/company/mobile-organi.png");
   }
   .company-management-txt {
     width: 340px;
@@ -1280,26 +1278,29 @@ div.company-greeting-txt span:nth-last-child(2) {
   }
   .company-management-img1 {
     width: 300px;
-    height: 190px;
-    background-image: url("/img/company/Group\ 306.png");
+    height: 490px;
+    background-image: url("/img/company/mobile-mana01.png");
     margin: 10px auto;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
   }
 
+  .company-management-img2-box {
+    height: 1310px;
+  }
   .company-management-img2 {
     width: 100%;
-    height: 61=20px;
-    background-image: url("/img/company/Group\ 307.png");
+    height: 100%;
+    background-image: url("/img/company/mobile-mana02.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 180% 60%;
+    background-size: 100% 80%;
 
     margin-top: -120px;
   }
   .company-management-con {
-    height: 950px;
+    height: 1850px;
   }
 
   .company-directions-con {
