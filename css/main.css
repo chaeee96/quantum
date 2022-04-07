@@ -401,6 +401,8 @@ div.mobile-menu-con-con {
   height: 900px;
   padding: 80px 0;
 }
+
+
 .company-greeting-logo {
   width: 200px;
   height: 200px;
@@ -448,6 +450,9 @@ div.company-greeting-txt span:nth-last-child(2) {
   font-size: 28px;
   font-weight: 600;
   color: #3a3a3a;
+}
+.company-con .company-greeting-txt-box span:last-child{
+  font-weight: 400;
 }
 
 .greeting-txt-margin {
@@ -509,10 +514,10 @@ div.company-greeting-txt span:nth-last-child(2) {
   color: #d6d5d5;
 }
 .company-management-txt {
-  width: 760px;
+  width: 900px;
   height: 180px;
   /*   border: solid gray 0.5px; */
-
+  text-align: center;
   margin: auto;
   margin-top: 80px;
 }
@@ -868,7 +873,7 @@ div.company-greeting-txt span:nth-last-child(2) {
 .submit > ul > li:last-child {
   display: block;
   padding: 25px 160px;
-  width: 380px;
+  width: 400px;
   border: solid #200f50 3px;
   border-radius: 20px;
   font-size: 22px;
@@ -1091,7 +1096,7 @@ div.company-greeting-txt span:nth-last-child(2) {
     width: 700px;
   }
   .submit > ul > li:last-child {
-    width: 360px;
+    width: 400px;
     padding: 24px 100px;
   }
 }
@@ -1432,8 +1437,8 @@ div.company-greeting-txt span:nth-last-child(2) {
     height: 1450px;
   }
   .submit > ul > li:last-child {
-    width: 180px;
-    padding: 10px 40px;
+    width: 200px;
+    padding: 10px 30px;
     font-size: 16px;
   }
   .recruit-empoly-txt div ul {
