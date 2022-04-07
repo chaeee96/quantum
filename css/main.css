@@ -546,11 +546,11 @@ div.company-greeting-txt span:nth-last-child(2) {
 }
 
 .company-management-img2 {
-  width: 2000px;
+ 
   height: 100%;
   overflow: hidden;
   height: 700px;
-  background-image: url("/img/company/Group307.png");
+  background-image: url("/img/company/mana.png");
 
   background-repeat: no-repeat;
   background-position: center;
