@@ -240,7 +240,7 @@ div.mobile-menu-con-con {
   margin-top: 40px;
 }
 .main-con-txt-box span {
-  color: aliceblue;
+  color: blue;
   line-height: 20px;
 }
 .main-con-txt-box > span:nth-child(1) {
@@ -402,7 +402,6 @@ div.mobile-menu-con-con {
   padding: 80px 0;
 }
 
-
 .company-greeting-logo {
   width: 200px;
   height: 200px;
@@ -451,7 +450,7 @@ div.company-greeting-txt span:nth-last-child(2) {
   font-weight: 600;
   color: #3a3a3a;
 }
-.company-con .company-greeting-txt-box span:last-child{
+.company-con .company-greeting-txt-box span:last-child {
   font-weight: 400;
 }
 
@@ -546,7 +545,6 @@ div.company-greeting-txt span:nth-last-child(2) {
 }
 
 .company-management-img2 {
- 
   height: 100%;
   overflow: hidden;
   height: 700px;
