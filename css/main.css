@@ -240,7 +240,7 @@ div.mobile-menu-con-con {
   margin-top: 40px;
 }
 .main-con-txt-box span {
-  color: blue;
+  color: white;
   line-height: 20px;
 }
 .main-con-txt-box > span:nth-child(1) {
@@ -290,9 +290,10 @@ div.mobile-menu-con-con {
   position: relative;
 }
 .company-bg {
-  min-width: 100%;
+  width: 100%;
   min-height: 480px;
   background-image: url("/img/company/Group293.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -625,6 +626,7 @@ div.company-greeting-txt span:nth-last-child(2) {
   background-image: url("/img/business/Group\ 294.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   position: relative;
 }
 
@@ -736,6 +738,7 @@ div.company-greeting-txt span:nth-last-child(2) {
   min-height: 480px;
   background-image: url("/img/pr/Group\ 292.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
   position: relative;
 }
@@ -772,6 +775,7 @@ div.company-greeting-txt span:nth-last-child(2) {
   min-height: 480px;
   background-image: url("/img/recruit/Group\ 295.png");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
   position: relative;
 }
